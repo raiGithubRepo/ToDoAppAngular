@@ -1,0 +1,16 @@
+<div class="text-center" style="margin:40px;">
+  <h4>To Do List</h4>
+</div>
+
+<table class="table">
+  <thead>
+    <th>ToDo Id</th>
+    <th>ToDo Name</th>
+    <th>Priority</th>
+  </thead>
+  <tr *ngFor="let todo of todoList">
+    <td>{{ todo.taskId }}</td>
+    <td>{{ todo.taskName }}</td>
+    <td>{{ todo.priority }}</td>
+  </tr>
+</table>
