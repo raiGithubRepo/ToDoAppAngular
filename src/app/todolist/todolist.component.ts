@@ -10,7 +10,6 @@ export class ToDoListComponent implements OnInit {
   constructor(private todoService: ToDoService) {}
   ngOnInit() {
     this.todoService.getToDoList().subscribe((data: any[]) => {
-      console.log(data);
       this.todoList = data;
     });
   }

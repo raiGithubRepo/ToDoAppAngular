@@ -7,13 +7,15 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ToDoListComponent } from "./todolist/todolist.component";
+import { ToDo } from "./createtodo/createtodo.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    ToDo
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
