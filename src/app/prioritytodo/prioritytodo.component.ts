@@ -17,7 +17,6 @@ export class PriorityToDo implements OnInit {
           filteredData.push(data[i]);
         }
       }
-      console.log(filteredData);
       this.todoList = filteredData;
     });
   }

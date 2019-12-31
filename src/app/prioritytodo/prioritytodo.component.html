@@ -2,14 +2,18 @@
   <h4>Priority To Do List</h4>
 </div>
 
-<table class="table">
+<table class="table" align="center">
   <thead>
     <th>ToDo Id</th>
     <th>ToDo Name</th>
     <th>Priority</th>
   </thead>
   <tr *ngFor="let todo of todoList">
-    <td><a [routerLink]="'/all'">{{ todo.numberInt }}</a></td>
+    <td>
+      <a [routerLink]="'/all'" class="badge badge-secondary"
+        >{{ todo.numberInt }}</a
+      >
+    </td>
     <td>{{ todo.taskName }}</td>
     <td>{{ todo.numberBool }}</td>
   </tr>

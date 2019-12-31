@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
   { path: "all", component: ToDoListComponent, pathMatch: "full" },
   { path: "new", component: ToDo, pathMatch: "full" },
+  { path: "new/:id", component: ToDo, pathMatch: "full" },
   { path: "priority", component: PriorityToDo, pathMatch: "full" }
 ];
 
