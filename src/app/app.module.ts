@@ -8,6 +8,7 @@ import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ToDoListComponent } from "./todolist/todolist.component";
 import { ToDo } from "./createtodo/createtodo.component";
+import { PriorityToDo } from "./prioritytodo/prioritytodo.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ToDo } from "./createtodo/createtodo.component";
     NavbarComponent,
     HomeComponent,
     ToDoListComponent,
-    ToDo
+    ToDo,
+    PriorityToDo
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

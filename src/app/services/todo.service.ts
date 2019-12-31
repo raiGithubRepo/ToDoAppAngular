@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class ToDoService {
   API_URL: string =
-    "https://app.fakejson.com/q/4R7WJrAI?token=ZDeSSxbIQmVIP8qnPLCKwQ";
+    "https://my-json-server.typicode.com/raiGithubRepo/fakejsonapi/data";
   constructor(private http: HttpClient) {}
   getToDoList() {
     return this.http.get(this.API_URL);
